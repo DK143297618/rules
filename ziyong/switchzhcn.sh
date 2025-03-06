@@ -9,7 +9,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo -e "${GREEN}开始配置 Debian 中文环境...${NC}"
-apt install sudo -y
+
 # 更新软件包列表
 echo -e "${GREEN}更新软件包列表...${NC}"
 sudo apt update
@@ -21,7 +21,12 @@ sudo apt install -y locales fonts-noto-cjk curl wget
 # 生成 zh_CN.UTF-8 语言环境
 echo -e "${GREEN}生成 zh_CN.UTF-8 语言环境...${NC}"
 sudo locale-gen zh_CN.UTF-8
-sudo update-locale LANG=zh_CN.UTF-8
+
+# 检查是否成功生成语言环境
+if ! locale -a | grep -q "zh_CN.UTF-8"; then
+    echo -e "${RED}生成 zh_CN.UTF-8 语言环境失败，请检查系统配置！${NC}"
+    exit 1
+fi
 
 # 设置默认语言环境
 echo -e "${GREEN}设置默认语言环境为 zh_CN.UTF-8...${NC}"
