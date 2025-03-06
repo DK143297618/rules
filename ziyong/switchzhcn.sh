@@ -9,7 +9,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 echo -e "${GREEN}开始配置 Debian 中文环境...${NC}"
-
+apt install sudo -y
 # 更新软件包列表
 echo -e "${GREEN}更新软件包列表...${NC}"
 sudo apt update
