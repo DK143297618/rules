@@ -6,7 +6,7 @@ sudo apt install zsh git vim curl -y
 
 # 安装 Oh My Zsh，并自动应答“yes”更改默认 shell
 echo "安装 Oh My Zsh，并自动设置 zsh 为默认 shell..."
-zsh -c "CHSH=yes sh -c \"\$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\""
+zsh -c "CHSH=yes sh -c \"\$(curl -fsSL https://fastly.jsdelivr.net/gh/ohmyzsh/ohmyzsh@master/tools/install.sh)\""
 
 # 安装 Oh My Zsh 插件：zsh-autosuggestions 和 zsh-syntax-highlighting
 echo "安装 zsh-autosuggestions 和 zsh-syntax-highlighting 插件..."
