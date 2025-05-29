@@ -1,31 +1,44 @@
 #!/bin/bash
 
-# 更新系统包列表并安装必要的软件
+set -e
+
+echo "🚮 正在卸载 zsh 并清理相关配置..."
+
+sudo apt remove --purge zsh -y
+rm -rf ~/.oh-my-zsh ~/.zshrc ~/.zprofile ~/.zlogin ~/.zlogout ~/.zshenv ~/.zsh ~/.cache/zsh ~/.local/share/zsh ~/.zcompdump*
+
+echo "✅ 清理完成，开始重新安装 zsh 和配置..."
+
 sudo apt update
-sudo apt install zsh git vim curl -y
+sudo apt install zsh git curl command-not-found -y
 
-# 安装 Oh My Zsh，并自动应答“yes”更改默认 shell
-echo "安装 Oh My Zsh，并自动设置 zsh 为默认 shell..."
-zsh -c "CHSH=yes sh -c \"\$(curl -fsSL https://fastly.jsdelivr.net/gh/ohmyzsh/ohmyzsh@master/tools/install.sh)\""
+echo "⚙️ 安装 Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# 安装 Oh My Zsh 插件：zsh-autosuggestions 和 zsh-syntax-highlighting
-echo "安装 zsh-autosuggestions 和 zsh-syntax-highlighting 插件..."
+echo "🔌 安装插件 zsh-autosuggestions 和 zsh-syntax-highlighting..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# 安装 command-not-found 插件
-echo "安装 command-not-found 插件..."
-sudo apt install command-not-found -y
+echo "🛠 配置 ~/.zshrc 插件..."
+sed -i 's/^plugins=.*/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 
-# 定义新的插件列表
-new_plugins="git command-not-found zsh-autosuggestions zsh-syntax-highlighting"
+cat >> ~/.zshrc << 'EOF'
 
-# 更新 .zshrc 文件中的 plugins 配置
-echo "更新 .zshrc 文件中的 plugins 配置..."
-sed -i "s/^plugins=(.*)/plugins=(${new_plugins})/" ~/.zshrc
+# 手动加载插件
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# 重新加载 zsh 配置
-echo "重新加载 zsh 配置..."
-source ~/.zshrc
+# command-not-found 支持
+if [ -x /usr/lib/command-not-found ]; then
+    function command_not_found_handler() {
+        /usr/lib/command-not-found -- "$1"
+        return $?
+    }
+fi
+EOF
 
-echo "配置完成！"
+echo "🌀 设置 zsh 为默认 shell..."
+chsh -s $(which zsh)
+
+echo "✅ 安装完成，立即切换到 zsh！"
+exec zsh
