@@ -1,0 +1,363 @@
+
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,po0.io
+DOMAIN-SUFFIX,rustdesk.com
+DOMAIN-SUFFIX,asklink.com
+DOMAIN-SUFFIX,1788.fit
+
+# ===== smartdns audit 缺口域名（2026-09-28，已核验大陆节点）=====
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,appledownload.qtlcdn.com
+DOMAIN-SUFFIX,aweme.snssdk.com
+DOMAIN-SUFFIX,captive.g.aaplimg.com
+DOMAIN-SUFFIX,cds.apple.com
+DOMAIN-SUFFIX,cdsassets.apple.com
+DOMAIN-SUFFIX,cf-gl.comfylink.com
+DOMAIN-SUFFIX,cstat.cdn-apple.com
+DOMAIN-SUFFIX,dig.bdurl.net
+DOMAIN-SUFFIX,dy-download-a.yangyi02.com
+DOMAIN-SUFFIX,entitlements.itunes.apple.com
+DOMAIN-SUFFIX,g-page-quic.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,ib-lq.snssdk.com
+DOMAIN-SUFFIX,img.meituan.net
+DOMAIN-SUFFIX,ipip-gl1.comfylink.com
+DOMAIN-SUFFIX,k128-mzstatic.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,k128-swcdn.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,k128.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,l2-toutiao-ipv6-ml.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,l7-online-self-domestic.s.dsa.cdnbuild.net
+DOMAIN-SUFFIX,lf-cdn-tos.bytescm.com
+DOMAIN-SUFFIX,lf-webcast-gr-sourcecdn.bytegecko.com
+DOMAIN-SUFFIX,metrics1.data.hicloud.com
+DOMAIN-SUFFIX,ocsp2.apple.com
+DOMAIN-SUFFIX,opencdnbdportrait.jomodns.com
+DOMAIN-SUFFIX,pancake.apple.com
+DOMAIN-SUFFIX,publicassets.cdn-apple.com
+DOMAIN-SUFFIX,sf6-fe-tos.pglstatp-toutiao.com
+DOMAIN-SUFFIX,update.pan.n.shifen.com
+DOMAIN-SUFFIX,valid.apple.com
+DOMAIN-SUFFIX,vod-license-m.volccdn.com
+DOMAIN-SUFFIX,xp.g.aaplimg.com
+DOMAIN-SUFFIX,zx-vodad-all.volcgtm.com
+
+DOMAIN-SUFFIX,xiaoai999.com
+
+# 2026-10-09 全剧视界视频 CDN（中国电信 CTL CDN，CNAME→ctlcdn.cn，大陆多省电信节点）
+DOMAIN-SUFFIX,qznovelvod.com
+# 2026-10-09 红果短剧（字节，CNAME bytedns3/cdngslb→山西电信 1.71.154.x）
+DOMAIN-SUFFIX,hongguoduanju.com
+# 2026-10-09 抖音视频 CDN（字节，CNAME alikunlun/queniusy→1.71.67.x 大陆）
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,idouyinvod.com
+# 2026-10-09 百度云 CDN GSLB（子域调度，大陆）
+DOMAIN-SUFFIX,bdcgslb.com
+
+# ===== 2026-10-09 CapyPlayer 组件国内节点 =====
+# 判定：DoH(223.5.5.5) 解析 + ip-api 归属，仅大陆 IP 域名入此表
+# 野果 视频CDN（河南电信 123.54.202.63）
+DOMAIN-SUFFIX,udhhzr.cn
+# 野果 CDN（移动云 45.251.100.98 / 113.125.206.114）
+DOMAIN-SUFFIX,oolrvd.cn
+# 51吃瓜 视频CDN（河南电信 123.54.202.63）
+DOMAIN-SUFFIX,hhjd.mobi
+# 黄果 图片CDN（大陆 .cn，公网未解析出A）
+DOMAIN-SUFFIX,pic.fisawck.cn
+DOMAIN-SUFFIX,pic.tuafjz.cn
+
+# ===== 2026-10-10 短剧视界/全剧视界 站源域名（大陆 IP 却曾被 FINAL 兜到代理）=====
+# 判定：DoH(223.5.5.5) 解析 + ip-api 归属为大陆，且绕开代理直连实测有响应
+# 韩小圈
+DOMAIN-SUFFIX,jennyhow.com
+# 短剧源 API（阿里云杭州 8.139.74.175）
+DOMAIN-SUFFIX,qmplaylet.com
+# 短剧源 API（中国电信 202.69.4.45）
+DOMAIN-SUFFIX,9ddm.com
+# 短剧源（腾讯云深圳 129.204.224.241）
+DOMAIN-SUFFIX,chaojichaojichanga.com
+# 有鲤视频 API（中国电信 36.110.185.13）
+DOMAIN-SUFFIX,youlishipin.com
+# 短剧源 API（阿里云杭州 112.124.103.9）
+DOMAIN-SUFFIX,duodutek.com
+# 短剧源（阿里云 116.62.214.204）
+DOMAIN-SUFFIX,shytkjgs.com
+# 2026-10-10 补：站点封代理 IP、直连反而通（经代理 403/444 → 直连 200）
+# 网果（Cloudflare 172.67.159.124，代理 IP 被挡）
+DOMAIN-SUFFIX,duanju2.com
+# 发果（香港 VH-GLOBAL 43.254.166.92，代理被 444）
+DOMAIN-SUFFIX,xzyx168.com
+# 2026-10-10 补：鬼片网媒体 CDN（德国 CenturyNetworks，CDN 按 IP 封代理：代理 404 / 直连 200）
+DOMAIN-SUFFIX,bfllvip.com
+# 2026-10-10 补：伍果视频 CDN（美国 NetLab Global，代理连不上 000 / 直连 404 有响应）
+DOMAIN-SUFFIX,tyyszywvod2.com
+# 2026-10-10 补：鬼片网播放 API（BVI blue tech，代理 504 超时 9.5s / 直连稳定 200 0.23s）
+DOMAIN-SUFFIX,fengbao13.com
+
+# ===== 2026-10-12 smartdns 缺口直连（2026-10-11 日报 × 实机规则命中）=====
+# 来源: gap-reports/2026-10-11-rule-match.txt — 共 90 个大陆域名命中 FINAL,Proxy 被兜到代理(sg T1 Po0)。
+# 排除: 已在 China_All/rule-direct/Bili 的 136 个、被 AdBlock 拦截的 8 个、Apple 的 2 个(gspe12-cn-ssl.ls.apple.com / init-kt.apple.com)。
+# 同族子域已折叠为后缀（10 个家族），其余逐条。
+DOMAIN-SUFFIX,0kkkkkt.com
+DOMAIN-SUFFIX,djlive.ndcimgs.com
+DOMAIN-SUFFIX,gepush.com
+DOMAIN-SUFFIX,qrstuvwxyzab.com
+DOMAIN-SUFFIX,tlivemcdn.com
+DOMAIN-SUFFIX,wmzfylgdsz.com
+DOMAIN-SUFFIX,xxpkg.com
+DOMAIN-SUFFIX,ydycdn.com
+DOMAIN-SUFFIX,z.cjjd14.com
+DOMAIN-SUFFIX,9ab741-1895857299.antpcdn.com
+DOMAIN-SUFFIX,alb-1pfriyjyf337k845wfbqsl0l9.cn-beijing.volcalb.com
+DOMAIN-SUFFIX,api.mijia.tech
+DOMAIN-SUFFIX,api.rdgoal.com
+DOMAIN-SUFFIX,att3.lawtimeimg.com
+DOMAIN-SUFFIX,bbs.luobotou.org
+DOMAIN-SUFFIX,cdn.deepseek.com
+DOMAIN-SUFFIX,code.douyinpay.com
+DOMAIN-SUFFIX,content-aware-authn.vivo.com
+DOMAIN-SUFFIX,content.volccdn.com
+DOMAIN-SUFFIX,d08dd5f4018525a9c516759af107bd7c.rdt.tfogc.com
+DOMAIN-SUFFIX,drivemby.com
+DOMAIN-SUFFIX,entry.wpscdn.com
+DOMAIN-SUFFIX,fe-static.deepseek.com
+DOMAIN-SUFFIX,filex-cos.51y5.net
+DOMAIN-SUFFIX,id.next-terminal.com
+DOMAIN-SUFFIX,kernelapi.vivo.com
+DOMAIN-SUFFIX,lb-af8wne5d-sne1c73tr4iamof2.clb.sh-tencentclb.net
+DOMAIN-SUFFIX,lf3-card-system.searchpstatp.com
+DOMAIN-SUFFIX,lf3-material.searchpstatp.com
+DOMAIN-SUFFIX,log-sdk.clickwifi.net
+DOMAIN-SUFFIX,m.activity-wbsj.com
+DOMAIN-SUFFIX,m.cifnews.com
+DOMAIN-SUFFIX,media-apk.kouxincdn.com
+DOMAIN-SUFFIX,mima.mmzs.space
+DOMAIN-SUFFIX,mini2.ikuai8.com
+DOMAIN-SUFFIX,mores.motowoo.com
+DOMAIN-SUFFIX,music.dsplego-dk.sched.dcloudstc.com
+DOMAIN-SUFFIX,mvtcl9yrzt3vehvtetmwh7vrx7hanurk.yundunwaf1.com
+DOMAIN-SUFFIX,only-972649-123-174-24-171.nstool.321fenx.com
+DOMAIN-SUFFIX,os-content-recommend.vivo.com
+DOMAIN-SUFFIX,p4-plat.wsukwai.com
+DOMAIN-SUFFIX,post.joyami.com
+DOMAIN-SUFFIX,pres.baofu.com
+DOMAIN-SUFFIX,rais115.mrstudio.vip
+DOMAIN-SUFFIX,rumt-zh.com
+DOMAIN-SUFFIX,sd-glks.gslb.uhabo.com
+DOMAIN-SUFFIX,sdk1xyajs.data.kuiniuca.com
+DOMAIN-SUFFIX,signal-t3-v4-az1.rtcxyz.com
+DOMAIN-SUFFIX,static.deepseek.com
+DOMAIN-SUFFIX,static.go2yd.com
+DOMAIN-SUFFIX,static.inkuai.com
+DOMAIN-SUFFIX,static.yidianzixun.com
+DOMAIN-SUFFIX,sts.api.mijia.tech
+DOMAIN-SUFFIX,t.hs.lingjuad.com
+DOMAIN-SUFFIX,ug.pangolin-dsp-toutiao.com
+DOMAIN-SUFFIX,viav-cse.avlyun.com
+DOMAIN-SUFFIX,video4-2.pddugc.com
+DOMAIN-SUFFIX,wpk-hb3c-lbg.ude.effirst.com
+DOMAIN-SUFFIX,wtmsnlw3a2ptei3rxbluagjajlmniuwh.yundunwaf2.com
+DOMAIN-SUFFIX,www.hupun.com
+DOMAIN-SUFFIX,www.shenlanbao.com
+
+# ===== 2026-10-12 自动追加 29 条（日报 2026-10-12.txt）=====
+DOMAIN-SUFFIX,byteeffecttos.com
+DOMAIN-SUFFIX,clickwifi.net
+DOMAIN-SUFFIX,ecombdimg.com
+DOMAIN-SUFFIX,maiche.com
+DOMAIN-SUFFIX,248a35ba.qtaeixd.com
+DOMAIN-SUFFIX,7pcos0voo04pkyeist7edexl0cj9a8fe.aligfwaf.com
+DOMAIN-SUFFIX,api.doupay.com
+DOMAIN-SUFFIX,beacons.gvt2.com
+DOMAIN-SUFFIX,cache-files.isjike.com
+DOMAIN-SUFFIX,case-cdn.oceanplayable.com
+DOMAIN-SUFFIX,cdn-mum.alibabachengdun.com
+DOMAIN-SUFFIX,cheyouquan.kakamobi.com
+DOMAIN-SUFFIX,d1.yyzqta.com
+DOMAIN-SUFFIX,datk.statisticslinks.com
+DOMAIN-SUFFIX,lb-mouw5g9x-es476m3fdg1cavzt.clb.sh-tencentclb.cloud
+DOMAIN-SUFFIX,lf3-fe.ecombdstatic.com
+DOMAIN-SUFFIX,lf3-static.bytefae.com
+DOMAIN-SUFFIX,m.bjhwtx.com
+DOMAIN-SUFFIX,newfind.vivo.com
+DOMAIN-SUFFIX,only-496590-123-174-24-171.nstool.laiqukankan.com
+DOMAIN-SUFFIX,only-894927-123-174-24-171.nstool.321fenx.com
+DOMAIN-SUFFIX,pic1.lawtimeimg.com
+DOMAIN-SUFFIX,psuite.vivo.com
+DOMAIN-SUFFIX,sfepodownload.mediatek.com
+DOMAIN-SUFFIX,sx-univ-v4.volcgtm.com
+DOMAIN-SUFFIX,vod-line.cdn02.dizgslb.com
+DOMAIN-SUFFIX,wap.baofu.com
+DOMAIN-SUFFIX,www.kjdsnews.com
+DOMAIN-SUFFIX,z.activity-wbsj.com
+
+DOMAIN-SUFFIX,svyun.com
+
+# ===== 2026-10-12 自动追加 10 条（日报 2026-10-12.txt）=====
+DOMAIN-SUFFIX,22a6cc2e8c0a0bc1-0242f686932a47d9.jomoxc.com
+DOMAIN-SUFFIX,copilot-api-prd-v2.vivo.com
+DOMAIN-SUFFIX,copilot-config-center.vivo.com
+DOMAIN-SUFFIX,e2882b36-9.sjxydc.com
+DOMAIN-SUFFIX,lb-m9xam8lf-em6u5sljzdnqwr7t.clb.sh-tencentclb.cloud
+DOMAIN-SUFFIX,m.vivojrkj.com
+DOMAIN-SUFFIX,ngpool.aishuttler.com
+DOMAIN-SUFFIX,nsdkxyajs.data.kuiniuca.com
+DOMAIN-SUFFIX,pushlog.seeyouyima.com
+DOMAIN-SUFFIX,sz-netease-all.volcgtm.com
+
+# ===== 2026-10-13 自动追加 4 条（日报 2026-10-13.txt）=====
+DOMAIN-SUFFIX,mssxapp.com
+DOMAIN-SUFFIX,hif-leim.deepseek.com
+DOMAIN-SUFFIX,push-rtmp-f5.ihuoshanlive.com
+DOMAIN-SUFFIX,push-rtmp-hs-f5.huoshanlive.com
+
+# ===== 2026-10-14 自动追加 14 条（日报 2026-10-14.txt）=====
+DOMAIN-SUFFIX,bvmlt.top
+DOMAIN-SUFFIX,pull.etoote.com
+DOMAIN-SUFFIX,rdt.tfogc.com
+DOMAIN-SUFFIX,vegslb.com
+DOMAIN-SUFFIX,9b271e75-9.sjxydc.com
+DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
+DOMAIN-SUFFIX,hcdnv.zjtd02.v6.c.cdnhwc2.com
+DOMAIN-SUFFIX,httpdns.bcelive.com
+DOMAIN-SUFFIX,lf3-developer-sign.bytemastatic.com
+DOMAIN-SUFFIX,motu.motumap.com
+DOMAIN-SUFFIX,only-574860-123-174-26-185.nstool.laiqukankan.com
+DOMAIN-SUFFIX,p66-ad.adkwai.com
+DOMAIN-SUFFIX,ty-finderbk.svideolego-dk.sched.dcloudstc.com
+DOMAIN-SUFFIX,zx-vod-gzb-a.gtm.s.glb4.com
+
+DOMAIN,nbbt.mmzs.space
+
+# ===== 2026-10-15 从 rules.dconf [Rule] 收拢进来的直连域名（策略 DIRECT 由 RULE-SET 行决定）=====
+DOMAIN,nasdebian.mmzs.xyz
+DOMAIN,fhnfile.oss-cn-shenzhen.aliyuncs.com
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,115cdn.com
+DOMAIN-SUFFIX,115cdn.net
+DOMAIN-SUFFIX,115img.com
+DOMAIN-SUFFIX,115vod.com
+DOMAIN-SUFFIX,116cd.cn
+DOMAIN-SUFFIX,116cd.com
+DOMAIN-SUFFIX,116cd.net
+DOMAIN-SUFFIX,anxia.com
+DOMAIN-SUFFIX,115.net
+DOMAIN-SUFFIX,115dot.com
+DOMAIN-SUFFIX,sq.cc
+DOMAIN-SUFFIX,z.ai
+
+# ===== 2026-10-15 自动追加 10 条（日报 2026-10-15.txt）=====
+DOMAIN-SUFFIX,51y5.net
+DOMAIN-SUFFIX,aishuttler.com
+DOMAIN-SUFFIX,rtcxyz.com
+DOMAIN-SUFFIX,s.bvfcdn.com
+DOMAIN-SUFFIX,ttwifi.net
+DOMAIN-SUFFIX,wkanx.com
+DOMAIN-SUFFIX,zztfly.com
+DOMAIN-SUFFIX,coin-api.y5coin.com
+DOMAIN-SUFFIX,hcdndyn.zjtd04.v6.c.cdnhwc2.com
+DOMAIN-SUFFIX,log.wifi.com
+
+# ===== 2026-10-16 自动追加 13 条（日报 2026-10-16.txt）=====
+DOMAIN-SUFFIX,nstool.321fenx.com
+DOMAIN-SUFFIX,wpsdns.com
+DOMAIN-SUFFIX,0ecf3c-3661375276.antpcdn.com
+DOMAIN-SUFFIX,cdn-api-verify.dutils.com
+DOMAIN-SUFFIX,d2.qjsalib.com
+DOMAIN-SUFFIX,imagecdn.gzjyh.com
+DOMAIN-SUFFIX,jpcmn3vd5br5qs.wsglb0.com
+DOMAIN-SUFFIX,m.3zhijk.com
+DOMAIN-SUFFIX,m.chameiwang.com
+DOMAIN-SUFFIX,m.pingguolv.com
+DOMAIN-SUFFIX,only-702024-123-174-26-38.nstool.laiqukankan.com
+DOMAIN-SUFFIX,sghao.yilianmeiti.com
+DOMAIN-SUFFIX,warm-m1.sched.sma-dk.tdnsv5.com
+
+# ===== 2026-10-17 自动追加 6 条（日报 2026-10-17.txt）=====
+DOMAIN-SUFFIX,hcdnl.pulldyin.gslb.c.cdnhwc2.com
+DOMAIN-SUFFIX,hcdnl.pulldyin.rtm.f26.gslb.c.cdnhwc2.com
+DOMAIN-SUFFIX,only-224209-123-174-26-38.nstool.laiqukankan.com
+DOMAIN-SUFFIX,pull-vol-cn-base.s.volcfcdndvs.com
+DOMAIN-SUFFIX,s5-update.dongfou.com
+DOMAIN-SUFFIX,updates.jsd.ksyunv5.com
+
+# ===== 2026-10-18 自动追加 17 条（日报 2026-10-18.txt）=====
+DOMAIN-SUFFIX,cdn.xiaoe-materials.com
+DOMAIN-SUFFIX,cdn.xiaoeknow.com
+DOMAIN-SUFFIX,xiaoeknow.com
+DOMAIN-SUFFIX,ab56a3-1956193481.antpcdn.com
+DOMAIN-SUFFIX,assets-tx.xet.tech
+DOMAIN-SUFFIX,inland-media.lzgame.top
+DOMAIN-SUFFIX,mamba.vodtkcache.p2p.haplat.net
+DOMAIN-SUFFIX,mamba.vodtkcachev6.p2p.haplat.net
+DOMAIN-SUFFIX,mamba.vodtkcachev6bk.p2p.haplat.net
+DOMAIN-SUFFIX,p2pstuntest.haplat.net
+DOMAIN-SUFFIX,report.h5.xeknow.com
+DOMAIN-SUFFIX,rq157n-41.cdnc0.cloudcsp.com
+DOMAIN-SUFFIX,sdktt.data.tianwenca.com
+DOMAIN-SUFFIX,sensors.h5.xed.plus
+DOMAIN-SUFFIX,sensors.xeknow.com
+DOMAIN-SUFFIX,static.dittocdn.com
+DOMAIN-SUFFIX,vodtkcache.p2p.haplat.net
+
+# ===== 2026-10-19 自动追加 6 条（日报 2026-10-19.txt）=====
+DOMAIN-SUFFIX,nstool.laiqukankan.com
+DOMAIN-SUFFIX,seeyouyima.com
+DOMAIN-SUFFIX,yunxinfw.com
+DOMAIN-SUFFIX,ad-evods.tianya.tv
+DOMAIN-SUFFIX,hcdnw.xiaoeglobal.bph.c.cdnhwc6.com
+DOMAIN-SUFFIX,hcdnw.xiaoeglobal.c.cdnhwc6.com
+
+DOMAIN-SUFFIX,todesk.com,extended-matching
+
+# ===== 2026-10-20 自动追加 2 条（日报 2026-10-20.txt）=====
+DOMAIN-SUFFIX,rnote.com
+DOMAIN-SUFFIX,www.ycsrcsc.com
+
+# ===== 2026-10-21 自动追加 15 条（日报 2026-10-21.txt）=====
+DOMAIN-SUFFIX,cvtapi.com
+DOMAIN-SUFFIX,fenbi.com
+DOMAIN-SUFFIX,seewo.com
+DOMAIN-SUFFIX,aisite.wejianzhan.com
+DOMAIN-SUFFIX,baoming1.zhitaosoft.com
+DOMAIN-SUFFIX,conn-service-cn-04.allawntech.com
+DOMAIN-SUFFIX,friday.cvte.com
+DOMAIN-SUFFIX,lf3-data.volccdn.com
+DOMAIN-SUFFIX,m.douguo.com
+DOMAIN-SUFFIX,m.ycrkb.com
+DOMAIN-SUFFIX,mobile.unicompayment.com
+DOMAIN-SUFFIX,p.htwx.net
+DOMAIN-SUFFIX,plugin.tianqistatic.com
+DOMAIN-SUFFIX,ty-finderd1p.svideolego-dk.sched.dcloudstc.com
+DOMAIN-SUFFIX,webrtc-dk.tliveplay.com
+
+# ===== 2026-10-22 自动追加 2 条（日报 2026-10-22.txt）=====
+DOMAIN-SUFFIX,adtrack.qianwen.com
+DOMAIN-SUFFIX,td-nexus.advlion.com
+
+# ===== 2026-10-23 自动追加 6 条（日报 2026-10-23.txt）=====
+DOMAIN-SUFFIX,cdnc0.cloudcsp.com
+DOMAIN-SUFFIX,2.debian.pool.ntp.org
+DOMAIN-SUFFIX,3.openwrt.pool.ntp.org
+DOMAIN-SUFFIX,9491c5-2027922091.antpcdn.com
+DOMAIN-SUFFIX,fdb7a46a8a718fbf-0c07817d7983baee.jomoxc.com
+DOMAIN-SUFFIX,ido.getui.net
+
+# ===== 2026-10-24 自动追加 5 条（日报 2026-10-24.txt）=====
+DOMAIN-SUFFIX,all-api.ymm56.com
+DOMAIN-SUFFIX,cloudalbum-api.vivo.com
+DOMAIN-SUFFIX,content-aware.vivo.com
+DOMAIN-SUFFIX,l7-online-self-max-v6.s.dsa.cdnbuild.net
+DOMAIN-SUFFIX,lf-headquarters-speed.yhgfb-cn-static.com
+
+# ===== 2026-10-25 自动追加 9 条（日报 2026-10-25.txt）=====
+DOMAIN-SUFFIX,doubao.com
+DOMAIN-SUFFIX,yunxish.com
+DOMAIN-SUFFIX,api-v3.mentamob.com
+DOMAIN-SUFFIX,bj-td-menta-01-callback.advlion.com
+DOMAIN-SUFFIX,c7dc3fab-9.sjxydc.com
+DOMAIN-SUFFIX,ofa.obriccloud.com
+DOMAIN-SUFFIX,sat0.net
+DOMAIN-SUFFIX,uz91h-sf.v.bsgslb.com
+DOMAIN-SUFFIX,v5-se-sjy-daily-lite-wha.dizgslb.com
+
+DOMAIN-SUFFIX,asklink.com
