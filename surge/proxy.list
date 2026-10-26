@@ -1,0 +1,61 @@
+
+# ===== 2026-10-09 CapyPlayer 组件境外节点 =====
+# 判定：DoH(223.5.5.5) 解析 + ip-api 归属，非大陆 IP 一律走代理（Proxy 组）
+# 主后端（Cloudflare 172.67.146.219 / 104.21.63.145）
+DOMAIN-SUFFIX,indevs.in
+DOMAIN-SUFFIX,happy-capy.garland.indevs.in
+# 黄豆 封面/切片 CDN（AWS CloudFront 18.65.90.x）
+DOMAIN-SUFFIX,d3rorc0p4i1kyz.cloudfront.net
+# 黄豆 上游站（参考来源）
+DOMAIN-SUFFIX,tideember.cc
+# 剧果 视频 CDN（CloudFront 18.65.135.x）
+DOMAIN-SUFFIX,video.huangju.net
+# 野果 站点（香港 Cloud Rely 103.41.185.227 / 43.230.144.225）
+DOMAIN-SUFFIX,yeguodj.com
+# 帝果（31.13.94.49）
+DOMAIN-SUFFIX,dsd.com.se
+# 51吃瓜 站点（31.13.71.19 / CloudFront 99.86.18.x / 18.65.135.x）
+DOMAIN-SUFFIX,51cg1.com
+DOMAIN-SUFFIX,51cgo19.com
+DOMAIN-SUFFIX,chigua.com
+DOMAIN-SUFFIX,galvglaog.cc
+# 黄果 站点与 CDN（香港 43.230.144.225 / 103.49.212.228；图片 172.67.142.48）
+DOMAIN-SUFFIX,huangguo6.com
+DOMAIN-SUFFIX,huangguoai.com
+DOMAIN-SUFFIX,rurhvbhx.cc
+DOMAIN-SUFFIX,eisees.com
+# MissAV 主站/图床/视频/推荐（Cloudflare / DMM / MGStage / xTom 等）
+DOMAIN-SUFFIX,missav.live
+DOMAIN-SUFFIX,9527.men
+DOMAIN-SUFFIX,fourhoi.com
+DOMAIN-SUFFIX,surrit.com
+DOMAIN-SUFFIX,awsimgsrc.dmm.co.jp
+DOMAIN-SUFFIX,mgstage.com
+DOMAIN-SUFFIX,aventertainments.com
+
+# ===== 2026-10-12 CapyPlayer 组件替代源（geekmc1999/capy-components 等）=====
+# 背景：原 happy-capy.garland.indevs.in 后端被停（全线 403 Access disabled），上面 indevs.in 两行保留待其恢复
+# 判定：DoH(223.5.5.5) 解析 + ip-api 归属，全部非大陆
+# 黄豆/黄果 反代 Worker（Cloudflare 104.21.47.151）
+DOMAIN-SUFFIX,wulii.de5.net
+# 剧果(红果黄剧) 站点与 API（AWS 新加坡/马来 18.65.135.x / 13.35.x）
+DOMAIN-SUFFIX,huangju.net
+# 剧果 playProxy / 橙果图标（Cloudflare 104.21.89.133）
+DOMAIN-SUFFIX,qzz.io
+# 57吃瓜（Cloudflare 172.67.214.239）
+DOMAIN-SUFFIX,57cg4.com
+# 橙果短剧（香港 Cloud Rely 103.49.212.229 / 43.230.144.226）
+DOMAIN-SUFFIX,chengguodj.com
+# 57吃瓜 图床代理（Cloudflare）
+DOMAIN-SUFFIX,images.weserv.nl
+# MissAV 镜像/图床补充（missav.ai 已被现有 DMM/Global TV 规则覆盖，不重复）
+DOMAIN-SUFFIX,missav.media
+DOMAIN-SUFFIX,missav.fans
+DOMAIN-SUFFIX,mrstcdn.store
+DOMAIN-SUFFIX,javtrailers.com
+
+# ===== 2026-10-15 从 rules.dconf [Rule] 收拢进来的走 Proxy 域名 =====
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
