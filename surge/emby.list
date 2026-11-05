@@ -1,7 +1,3 @@
-# emby 策略集 · 正本
-
-# 2026-11-05 dl.google.com 必须在 proxy.list 的 google.com 之前 → emby 集引用位置前移到 proxy.list 之前
-DOMAIN-SUFFIX,dl.google.com,extended-matching
 
 DOMAIN-SUFFIX,ftp2.eu.org
 DOMAIN-SUFFIX,covh.eu.org
@@ -37,4 +33,3 @@ DOMAIN-SUFFIX,as174.de
 DOMAIN,emby.dnscf.dpdns.org
 DOMAIN-SUFFIX,uhdnow.com
 DOMAIN-SUFFIX,cloudflarestorage.com
-

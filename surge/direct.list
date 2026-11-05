@@ -1,5 +1,3 @@
-# DIRECT 策略集 · 正本（Surge 读 KFC: https://nft.mmzs.de/surge/direct.list；GitHub: rules/anywhere/direct.list）
-
 
 DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,po0.io
@@ -9,6 +7,7 @@ DOMAIN-SUFFIX,1788.fit
 
 # ===== smartdns audit 缺口域名（2026-09-28，已核验大陆节点）=====
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,appledownload.qtlcdn.com
 DOMAIN-SUFFIX,aweme.snssdk.com
 DOMAIN-SUFFIX,captive.g.aaplimg.com
@@ -388,24 +387,3 @@ DOMAIN-SUFFIX,123865.com
 DOMAIN-SUFFIX,123912.com
 DOMAIN-SUFFIX,123952.com
 DOMAIN-SUFFIX,123957.com
-
-
-# ===== 2026-11-05 从 rules.dconf [Rule] 收编（按策略组收拢成规则集）=====
-DOMAIN-SUFFIX,cjjd19.com
-IP-CIDR,162.14.132.212/32,no-resolve
-DOMAIN,dstatus.mmzs.space
-DOMAIN,nft.mmzs.de
-DOMAIN,mmzs.space
-IP-CIDR,106.52.236.0/24,no-resolve
-IP-CIDR,43.142.145.0/24,no-resolve
-DOMAIN-SUFFIX,hongguo.com
-DOMAIN-SUFFIX,hongguo.douyin.com
-DOMAIN-SUFFIX,hongguoapp.com
-DOMAIN-SUFFIX,hongguosdk.com
-DOMAIN-SUFFIX,zijieapi.com
-DOMAIN-SUFFIX,byteimg.com
-DOMAIN-SUFFIX,pstatp.com
-DOMAIN-SUFFIX,snssdk.com,extended-matching
-DOMAIN-SUFFIX,icloud.com,extended-matching
-DOMAIN-SUFFIX,apple-cloudkit.com,extended-matching
-DOMAIN-SUFFIX,icloud-content.com,extended-matching
