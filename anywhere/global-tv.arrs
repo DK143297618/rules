@@ -1,0 +1,36 @@
+# NAME: global-tv
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 由 Surge rules.dconf 全量展开（策略组归并）
+# RULES: 30
+
+name = global-tv
+2, missav.ws
+2, missav.com
+2, missav123.com
+2, missav.ai
+2, missav111.com
+2, missav112.com
+2, missav113.com
+2, bigo.tv
+2, bigolive.tv
+2, bigo.sg
+2, bigolive.com
+2, bigo.live
+2, tvb.com
+2, tvbartistblog.com.hk
+2, tvbartisteblog.com
+2, tvbartistblog.cn
+2, mytvsuper.com
+2, tvbcharity.org
+2, tvbmusic.com.hk
+2, tvb.com.cn
+0, 103.84.220.0/22
+0, 103.84.222.0/24
+0, 202.126.48.0/20
+0, 202.126.53.0/24
+0, 202.126.54.0/23
+0, 202.126.56.0/21
+0, 202.126.56.0/22
+0, 202.126.60.0/22
+0, 45.115.196.0/22
+1, 2406:9400::/32

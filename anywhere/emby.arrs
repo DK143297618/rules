@@ -1,0 +1,39 @@
+# NAME: emby
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 由 Surge rules.dconf 全量展开（策略组归并）
+# RULES: 33
+
+name = emby
+2, dl.google.com
+2, ftp2.eu.org
+2, covh.eu.org
+2, uhdgo.com
+2, stluma.com
+2, emby-jp.mmzs.xyz
+2, emby-hk.mmzs.xyz
+2, jav.si
+2, rfc.uhdnow.com
+2, v1.uhdnow.com
+2, zzm.li
+2, 3.023168.xyz
+2, 9521732.xyz
+2, embyplus.org
+2, api.trakt.tv
+2, aca.best
+2, music.mefun.vip
+2, cfgtv.ii00.cc
+2, wgtv.ii00.cc
+2, wptv.ii00.cc
+2, cfptv.ii00.cc
+2, cf.bili.rip
+2, cn2gias.uk
+2, 223789.xyz
+2, 023168.xyz
+2, nsfw.oceancloud.asia
+2, media3.micu.hk
+2, media1.micu.hk
+2, media2.micu.hk
+2, as174.de
+2, emby.dnscf.dpdns.org
+2, uhdnow.com
+2, cloudflarestorage.com

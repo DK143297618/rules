@@ -1,0 +1,34 @@
+# NAME: apple
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 由 Surge rules.dconf 全量展开（策略组归并）
+# RULES: 28
+
+name = apple
+2, metrics.icloud.com
+2, api.smoot.apple.cn
+2, api.smoot.apple.com
+2, captive.apple.com
+2, gs-loc-cn.apple.com
+2, gs-loc.apple.com
+2, lcdn-registration.apple.com
+2, reserve-prime.apple.com
+2, seed-sequoia.siri.apple.com
+2, sequoia.apple.com
+2, smp-device-content.apple.com
+2, sq-device.apple.com
+2, suconfig.apple.com
+2, weather-data.apple.com
+2, xp-cdn.apple.com
+3, -cn.apple.com
+3, push-apple.com.akadns.net
+2, apple-cloudkit.com
+2, apple.com
+2, apple.com.cn
+2, icloud-content.com
+2, icloud.com
+2, icloud.com.cn
+2, lb-apple.com.akadns.net
+2, ls.apple.com.akadns.net
+2, ls.apple.com.edgesuite.net
+2, me.com
+2, push.apple.com.akadns.net

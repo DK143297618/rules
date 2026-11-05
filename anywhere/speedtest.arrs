@@ -1,0 +1,19 @@
+# NAME: speedtest
+# GENERATED-FOR: Anywhere Routing Rule Set
+# DESCRIPTION: 由 Surge rules.dconf 全量展开（策略组归并）
+# RULES: 13
+
+name = speedtest
+2, ip.sb
+2, fast.com
+3, speedtest
+2, ooklaserver.net
+2, ookla.com
+2, speedtest.net
+2, speedtestcustom.com
+2, violin.co.th
+2, violine.co.th
+3, bassoon
+2, speed.dler.io
+2, speed.cloudflare.com
+0, 96.30.112.242/32
