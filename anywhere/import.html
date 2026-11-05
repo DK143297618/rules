@@ -146,8 +146,9 @@
   <b>导入后必须做两件事：</b>
   <ol>
     <li>把 <b>reject</b> 拖到规则列表最上面（Anywhere 同层内「列表靠上优先」，否则广告会被 direct/proxy 抢走）。</li>
-    <li>代理类规则集（proxy / crypto / youtube / tg / tiktok / emby / global-tv / apple / bilibili / speedtest…）导入后默认是 Default，需要各自选一个代理策略。</li>
+    <li>代理类规则集（proxy / crypto / ai-suite / emby / global-tv / apple / speedtest）导入后默认是 Default，需要各自选一个代理策略。</li>
   </ol>
+  Telegram / YouTube / TikTok / Bilibili 用 Anywhere 自带的服务规则集，这里不再重复导入。<br>
   规则集里不含 Surge 专有写法：PROCESS-NAME、USER-AGENT、URL-REGEX、PROTOCOL、GEOIP、IP-ASN、DST-PORT 已剔除；国内直连靠 Anywhere 内建 Country Bypass。
 </div>
 
