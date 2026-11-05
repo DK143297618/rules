@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0b0f14">
+<title>Anywhere 规则导入</title>
+<style>
+  :root{
+    --bg:#0b0f14; --card:#141a22; --line:#22303d; --fg:#e8eef5; --dim:#8ba0b5;
+    --main:#2f81f7; --ghost:#1d2733; --warn:#f0a93b;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f5f7fa; --card:#fff; --line:#dde4ec; --fg:#0d1520; --dim:#5a7089;
+           --main:#1668e3; --ghost:#eef2f7; --warn:#b0561b; }
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;padding:20px 16px 40px;background:var(--bg);color:var(--fg);
+       font:16px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",sans-serif}
+  h1{font-size:22px;margin:0 0 6px}
+  .lead{color:var(--dim);font-size:14px;margin:0 0 16px}
+  .lead b{color:var(--fg)}
+  .allbox{margin:0 0 18px}
+  .allbtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+          padding:15px;border-radius:14px;background:var(--main);color:#fff;
+          font-weight:600;font-size:17px;text-decoration:none}
+  .allbtn:active{opacity:.85}
+  .allhint{color:var(--dim);font-size:13px;margin:8px 2px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+        padding:14px;margin:0 0 10px}
+  .meta{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .nm{font-size:17px;font-weight:650;letter-spacing:.2px}
+  .tag{font-size:12px;color:var(--main);border:1px solid var(--line);border-radius:999px;
+       padding:1px 8px}
+  .cnt{font-size:12px;color:var(--dim);margin-left:auto}
+  .sub{color:var(--dim);font-size:12.5px;margin-top:4px}
+  .sub.mono{font-size:11px;word-break:break-all;opacity:.7;margin-top:6px;
+            font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  .btns{display:flex;gap:10px;margin-top:11px}
+  .btn{flex:1;text-align:center;padding:11px;border-radius:11px;font-size:15px;
+       font-weight:600;border:0;text-decoration:none;cursor:pointer;font-family:inherit}
+  .btn.main{background:var(--main);color:#fff}
+  .btn.ghost{background:var(--ghost);color:var(--fg)}
+  .btn:active{opacity:.82}
+  .note{margin:22px 0 0;padding:13px 14px;border-radius:12px;background:var(--card);
+        border:1px solid var(--line);font-size:13px;color:var(--dim)}
+  .note b{color:var(--warn)}
+  .note ol{margin:8px 0 0;padding-left:18px}
+  .note li{margin:4px 0}
+  footer{margin-top:18px;color:var(--dim);font-size:11.5px;text-align:center}
+</style>
+</head>
+<body>
+<h1>Anywhere 规则导入</h1>
+<p class="lead">点「导入」会直接拉起 Anywhere 添加规则集。共 14 个（含全量合并版）。</p>
+
+<div class="allbox">
+  <a class="allbtn" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Freject.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fdirect.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fproxy.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fcrypto.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fai-suite.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fyoutube.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Ftg.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Ftiktok.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Femby.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fglobal-tv.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fapple.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fbilibili.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fspeedtest.arrs&link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fall.arrs" rel="nofollow">⚡️ 一键导入全部（14 个规则集）</a>
+  <p class="allhint">一次导入全部会按 顺序为 reject → direct → 各代理组 → all 添加；如果只想用合并版，单独点最下面的 all 即可。</p>
+</div>
+
+  <div class="card">
+    <div class="meta"><span class="nm">reject</span><span class="tag">REJECT</span><span class="cnt">7707 条</span></div>
+    <div class="sub">routing 已写</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Freject.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/reject.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/reject.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">direct</span><span class="tag">DIRECT</span><span class="cnt">4240 条</span></div>
+    <div class="sub">routing 已写</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fdirect.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/direct.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/direct.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">proxy</span><span class="tag">代理</span><span class="cnt">714 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fproxy.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/proxy.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/proxy.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">crypto</span><span class="tag">代理</span><span class="cnt">271 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fcrypto.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/crypto.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/crypto.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">ai-suite</span><span class="tag">代理</span><span class="cnt">206 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fai-suite.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/ai-suite.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/ai-suite.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">youtube</span><span class="tag">代理</span><span class="cnt">166 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fyoutube.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/youtube.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/youtube.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">tg</span><span class="tag">代理</span><span class="cnt">40 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Ftg.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/tg.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/tg.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">tiktok</span><span class="tag">代理</span><span class="cnt">36 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Ftiktok.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/tiktok.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/tiktok.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">emby</span><span class="tag">代理</span><span class="cnt">33 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Femby.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/emby.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/emby.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">global-tv</span><span class="tag">代理</span><span class="cnt">30 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fglobal-tv.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/global-tv.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/global-tv.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">apple</span><span class="tag">代理</span><span class="cnt">28 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fapple.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/apple.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/apple.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">bilibili</span><span class="tag">代理</span><span class="cnt">13 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fbilibili.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/bilibili.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/bilibili.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">speedtest</span><span class="tag">代理</span><span class="cnt">13 条</span></div>
+    <div class="sub">导入后在 App 里选代理</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fspeedtest.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/speedtest.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/speedtest.arrs</div>
+  </div>
+  <div class="card">
+    <div class="meta"><span class="nm">all</span><span class="tag">混合</span><span class="cnt">全部规则</span></div>
+    <div class="sub">原顺序合并</div>
+    <div class="btns">
+      <a class="btn main" href="anywhere://add-rule-set?link=https%3A%2F%2Fpis.mmzs.space%2Ffiles%2Fanywhere%2Fall.arrs" rel="nofollow">导入</a>
+      <button class="btn ghost" data-url="https://pis.mmzs.space/files/anywhere/all.arrs">复制链接</button>
+    </div>
+    <div class="sub mono">https://raw.githubusercontent.com/DK143297618/rules/main/anywhere/all.arrs</div>
+  </div>
+
+<div class="note">
+  <b>导入后必须做两件事：</b>
+  <ol>
+    <li>把 <b>reject</b> 拖到规则列表最上面（Anywhere 同层内「列表靠上优先」，否则广告会被 direct/proxy 抢走）。</li>
+    <li>代理类规则集（proxy / crypto / youtube / tg / tiktok / emby / global-tv / apple / bilibili / speedtest…）导入后默认是 Default，需要各自选一个代理策略。</li>
+  </ol>
+  规则集里不含 Surge 专有写法：PROCESS-NAME、USER-AGENT、URL-REGEX、PROTOCOL、GEOIP、IP-ASN、DST-PORT 已剔除；国内直连靠 Anywhere 内建 Country Bypass。
+</div>
+
+<footer>direct 4240 · proxy 714 · reject 7707 · tg 40 · bilibili 13 · emby 33 · youtube 166 · ai-suite 206 · global-tv 30 · apple 28 · speedtest 13 · tiktok 36 · crypto 271</footer>
+<script>
+  document.querySelectorAll('button.btn.ghost').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var u = b.getAttribute('data-url');
+      var done = function () { var t = b.textContent; b.textContent = '已复制'; setTimeout(function(){ b.textContent = t; }, 1200); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(u).then(done).catch(function(){ prompt('复制：', u); });
+      } else { prompt('复制：', u); }
+    });
+  });
+</script>
+</body>
+</html>
