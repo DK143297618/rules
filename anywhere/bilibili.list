@@ -1,6 +1,13 @@
-# B站 集（Bili 组）
-
-DOMAIN-SUFFIX,biliimg.com
-DOMAIN-SUFFIX,biligame.com
-DOMAIN-SUFFIX,bilibili.tv
-DOMAIN-SUFFIX,biliintl.com
+DOMAIN-SUFFIX,acg.tv,Bili
+DOMAIN-SUFFIX,acgvideo.com,Bili
+DOMAIN-SUFFIX,b23.tv,Bili
+DOMAIN-SUFFIX,biliapi.com,Bili
+DOMAIN-SUFFIX,biliapi.net,Bili
+DOMAIN-SUFFIX,bilibili.com,Bili
+DOMAIN-SUFFIX,bilibili.tv,Bili
+DOMAIN-SUFFIX,bilivideo.com,Bili
+DOMAIN-SUFFIX,hdslb.com,Bili
+DOMAIN,upos-hz-mirrorakam.akamaized.net,Bili
+DOMAIN-SUFFIX,biliimg.com,Bili
+DOMAIN-SUFFIX,biligame.com,Bili
+DOMAIN-SUFFIX,biliintl.com,Bili
