@@ -1,0 +1,15 @@
+# Speedtest 集（USER-AGENT 两条无法进规则集，留在 rules.dconf）
+
+DOMAIN,ip.sb,extended-matching
+DOMAIN-SUFFIX,fast.com,extended-matching
+DOMAIN-KEYWORD,speedtest,extended-matching
+DOMAIN-SUFFIX,ooklaserver.net,extended-matching
+DOMAIN-SUFFIX,ookla.com,extended-matching
+DOMAIN-SUFFIX,speedtest.net,extended-matching
+DOMAIN-SUFFIX,speedtestcustom.com,extended-matching
+DOMAIN-SUFFIX,violin.co.th,extended-matching
+DOMAIN-SUFFIX,violine.co.th,extended-matching
+DOMAIN-KEYWORD,bassoon,extended-matching
+DOMAIN,speed.dler.io
+DOMAIN-SUFFIX,speed.cloudflare.com,extended-matching
+IP-CIDR,96.30.112.242/32,no-resolve

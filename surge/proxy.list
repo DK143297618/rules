@@ -1,3 +1,5 @@
+# Proxy 策略集 · 正本
+
 
 # ===== 2026-10-09 CapyPlayer 组件境外节点 =====
 # 判定：DoH(223.5.5.5) 解析 + ip-api 归属，非大陆 IP 一律走代理（Proxy 组）
@@ -59,3 +61,15 @@ DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,googleusercontent.com
+
+
+# ===== 2026-11-05 收编原 LAX legend / SG legend / JP / KFC Po0 / T1 Po0 内联规则 =====
+DOMAIN,dj.mmzs.de,extended-matching
+DOMAIN-SUFFIX,commandcode.ai,extended-matching
+DOMAIN-SUFFIX,myavlive.com,extended-matching
+DOMAIN-SUFFIX,recombee.com,extended-matching
+DOMAIN-SUFFIX,meta.com,extended-matching
+DOMAIN-SUFFIX,ollama.com,extended-matching
+DOMAIN-SUFFIX,ultramobile.com,extended-matching
+DOMAIN-SUFFIX,vvebo.vip,extended-matching
+DOMAIN-SUFFIX,fanza.jp,extended-matching

@@ -1,0 +1,8 @@
+# AI Suite 集
+
+DOMAIN-SUFFIX,gemini.google.com,extended-matching
+DOMAIN-SUFFIX,aistudio.google.com,extended-matching
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,extended-matching
+DOMAIN-SUFFIX,deepmind.google,extended-matching
+DOMAIN-SUFFIX,opencode.ai,extended-matching
+DOMAIN-SUFFIX,x.ai,extended-matching

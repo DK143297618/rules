@@ -1,0 +1,14 @@
+# Global TV 集（MissAV / BIGO 等）
+
+DOMAIN-SUFFIX,missav.ws,extended-matching
+DOMAIN-SUFFIX,missav.com,extended-matching
+DOMAIN-SUFFIX,missav123.com,extended-matching
+DOMAIN-SUFFIX,missav.ai,extended-matching
+DOMAIN-SUFFIX,missav111.com,extended-matching
+DOMAIN-SUFFIX,missav112.com,extended-matching
+DOMAIN-SUFFIX,missav113.com,extended-matching
+DOMAIN-SUFFIX,bigo.tv,extended-matching
+DOMAIN-SUFFIX,bigolive.tv,extended-matching
+DOMAIN-SUFFIX,bigo.sg,extended-matching
+DOMAIN-SUFFIX,bigolive.com,extended-matching
+DOMAIN-SUFFIX,bigo.live,extended-matching
