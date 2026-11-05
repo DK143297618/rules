@@ -86,7 +86,6 @@ DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bntrace.com
 DOMAIN-SUFFIX,bsc.getblock.io
 DOMAIN-SUFFIX,bscscan.com
-PROCESS-NAME,Binance.exe
 DOMAIN-SUFFIX,bitflyer.com
 DOMAIN-SUFFIX,bitflyer.jp
 DOMAIN-SUFFIX,bisq.io
@@ -224,7 +223,6 @@ DOMAIN-SUFFIX,huobi.ws
 DOMAIN-SUFFIX,huobiasia.vip
 DOMAIN-SUFFIX,huobigroup.com
 DOMAIN-SUFFIX,huobitoken.com
-PROCESS-NAME,Huobi.exe
 DOMAIN-SUFFIX,docs.lotu.sh
 DOMAIN-SUFFIX,filecoin.io
 DOMAIN-SUFFIX,ipfs.io
@@ -248,7 +246,6 @@ DOMAIN-SUFFIX,nonfungible.com
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,okx.com
-PROCESS-NAME,OKX.exe
 DOMAIN-SUFFIX,paxful.com
 DOMAIN-SUFFIX,1ml.com
 DOMAIN-SUFFIX,bitcoinvisuals.com

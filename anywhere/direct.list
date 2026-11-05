@@ -487,7 +487,6 @@ DOMAIN,instant.arubanetworks.com,DIRECT
 DOMAIN,setmeup.arubanetworks.com,DIRECT
 DOMAIN,gs-loc-cn.apple.com,DIRECT
 DOMAIN,music.apple.com,DIRECT
-PROCESS-NAME,storedownloadd,DIRECT
 DOMAIN-SUFFIX,appstoreconnect.apple.com,DIRECT
 DOMAIN,contentdelivery.itunes.apple.com,DIRECT
 DOMAIN-SUFFIX,itunesconnect.apple.com,DIRECT
@@ -495,17 +494,6 @@ DOMAIN,api.smoot.apple.cn,DIRECT
 DOMAIN-SUFFIX,cn-ssl.ls.apple.com,DIRECT
 DOMAIN-SUFFIX,cn.ls.apple.com,DIRECT
 DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com,DIRECT
-PROCESS-NAME,aria2c,DIRECT
-PROCESS-NAME,fdm,DIRECT
-PROCESS-NAME,Folx,DIRECT
-PROCESS-NAME,NetTransport,DIRECT
-PROCESS-NAME,qbittorrent,DIRECT
-PROCESS-NAME,qbittorrent-nox,DIRECT
-PROCESS-NAME,Thunder,DIRECT
-PROCESS-NAME,Transmission,DIRECT
-PROCESS-NAME,uTorrent,DIRECT
-PROCESS-NAME,WebTorrent,DIRECT
-PROCESS-NAME,WebTorrent Helper,DIRECT
 DOMAIN,ol.epicgames.com,DIRECT
 DOMAIN-SUFFIX,dl.google.com,DIRECT
 DOMAIN,safebrowsing.googleapis.com,DIRECT
@@ -538,8 +526,6 @@ DOMAIN-SUFFIX,sandai.net,DIRECT
 DOMAIN-SUFFIX,springsunday.net,DIRECT
 DOMAIN-SUFFIX,tjupt.org,DIRECT
 DOMAIN-SUFFIX,totheglory.im,DIRECT
-PROCESS-NAME,ss-local,DIRECT
-PROCESS-NAME,v2ray,DIRECT
 DOMAIN,cm.steampowered.com,DIRECT
 DOMAIN,csgo.wmsj.cn,DIRECT
 DOMAIN,dl.steam.clngaa.com,DIRECT
@@ -562,8 +548,6 @@ DOMAIN,steamstore-a.akamaihd.net,DIRECT
 DOMAIN,steamusercontent-a.akamaihd.net,DIRECT
 DOMAIN,steamuserimages-a.akamaihd.net,DIRECT
 DOMAIN,wmsjsteam.com,DIRECT
-PROCESS-NAME,tailscaled,DIRECT
-PROCESS-NAME,tailscaled.exe,DIRECT
 DOMAIN-SUFFIX,ts.net,DIRECT
 DOMAIN-SUFFIX,solarcity.com,DIRECT
 DOMAIN,tesla-cdn.thron.cn,DIRECT
@@ -576,7 +560,6 @@ DOMAIN-SUFFIX,teslamotors.com,DIRECT
 DOMAIN-SUFFIX,teslamotors.com.cn,DIRECT
 DOMAIN-SUFFIX,ts.la,DIRECT
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com,DIRECT
-PROCESS-NAME,UUBooster,DIRECT
 DOMAIN-SUFFIX,3gppnetwork.org,DIRECT
 DOMAIN-SUFFIX,app-measurement.com,DIRECT
 DOMAIN-SUFFIX,xunlei.com,DIRECT

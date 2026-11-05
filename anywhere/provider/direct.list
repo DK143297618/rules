@@ -487,7 +487,6 @@ DOMAIN,instant.arubanetworks.com
 DOMAIN,setmeup.arubanetworks.com
 DOMAIN,gs-loc-cn.apple.com
 DOMAIN,music.apple.com
-PROCESS-NAME,storedownloadd
 DOMAIN-SUFFIX,appstoreconnect.apple.com
 DOMAIN,contentdelivery.itunes.apple.com
 DOMAIN-SUFFIX,itunesconnect.apple.com
@@ -495,17 +494,6 @@ DOMAIN,api.smoot.apple.cn
 DOMAIN-SUFFIX,cn-ssl.ls.apple.com
 DOMAIN-SUFFIX,cn.ls.apple.com
 DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com
-PROCESS-NAME,aria2c
-PROCESS-NAME,fdm
-PROCESS-NAME,Folx
-PROCESS-NAME,NetTransport
-PROCESS-NAME,qbittorrent
-PROCESS-NAME,qbittorrent-nox
-PROCESS-NAME,Thunder
-PROCESS-NAME,Transmission
-PROCESS-NAME,uTorrent
-PROCESS-NAME,WebTorrent
-PROCESS-NAME,WebTorrent Helper
 DOMAIN,ol.epicgames.com
 DOMAIN-SUFFIX,dl.google.com
 DOMAIN,safebrowsing.googleapis.com
@@ -538,8 +526,6 @@ DOMAIN-SUFFIX,sandai.net
 DOMAIN-SUFFIX,springsunday.net
 DOMAIN-SUFFIX,tjupt.org
 DOMAIN-SUFFIX,totheglory.im
-PROCESS-NAME,ss-local
-PROCESS-NAME,v2ray
 DOMAIN,cm.steampowered.com
 DOMAIN,csgo.wmsj.cn
 DOMAIN,dl.steam.clngaa.com
@@ -562,8 +548,6 @@ DOMAIN,steamstore-a.akamaihd.net
 DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
 DOMAIN,wmsjsteam.com
-PROCESS-NAME,tailscaled
-PROCESS-NAME,tailscaled.exe
 DOMAIN-SUFFIX,ts.net
 DOMAIN-SUFFIX,solarcity.com
 DOMAIN,tesla-cdn.thron.cn
@@ -576,7 +560,6 @@ DOMAIN-SUFFIX,teslamotors.com
 DOMAIN-SUFFIX,teslamotors.com.cn
 DOMAIN-SUFFIX,ts.la
 DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
-PROCESS-NAME,UUBooster
 DOMAIN-SUFFIX,3gppnetwork.org
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,xunlei.com
