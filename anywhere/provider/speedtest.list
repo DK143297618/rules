@@ -1,0 +1,13 @@
+DOMAIN,ip.sb
+DOMAIN-SUFFIX,fast.com
+DOMAIN-KEYWORD,speedtest
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,ookla.com
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,violin.co.th
+DOMAIN-SUFFIX,violine.co.th
+DOMAIN-KEYWORD,bassoon
+DOMAIN,speed.dler.io
+DOMAIN-SUFFIX,speed.cloudflare.com
+IP-CIDR,96.30.112.242/32,no-resolve
