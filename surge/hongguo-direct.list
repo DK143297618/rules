@@ -1,0 +1,11 @@
+# 红果 正片域直连（原 rules.dconf 40-50 区段 9 条）
+
+DOMAIN-SUFFIX,hongguo.com,extended-matching
+DOMAIN-SUFFIX,hongguo.douyin.com,extended-matching
+DOMAIN-SUFFIX,hongguoduanju.com,extended-matching
+DOMAIN-SUFFIX,hongguoapp.com,extended-matching
+DOMAIN-SUFFIX,hongguosdk.com,extended-matching
+DOMAIN-SUFFIX,zijieapi.com,extended-matching
+DOMAIN-SUFFIX,byteimg.com,extended-matching
+DOMAIN-SUFFIX,pstatp.com,extended-matching
+DOMAIN-SUFFIX,snssdk.com,extended-matching

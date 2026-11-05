@@ -1,0 +1,18 @@
+# 红果/字节 广告下发接口 REJECT（原 rules.dconf 18-38 区段 16 条）
+
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,ad.pangle.cn
+DOMAIN-SUFFIX,ad.pangolin.cn
+DOMAIN-KEYWORD,ad-union-sdk
+DOMAIN-KEYWORD,hongguo.ad
+DOMAIN-KEYWORD,reading-ad
+DOMAIN-KEYWORD,ad-sign
+DOMAIN,adim.pinduoduo.com
+DOMAIN,localhost.pan.baidu.com
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-KEYWORD,ads3-normal
+DOMAIN-KEYWORD,ads5-normal
+DOMAIN-KEYWORD,minigame3-normal
+DOMAIN-KEYWORD,minigame5-normal

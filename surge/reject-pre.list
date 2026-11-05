@@ -1,0 +1,12 @@
+# pre-matching REJECT（全局最高优先级，位置无关；原 10 条合并）
+
+DOMAIN-SUFFIX,mcdn.bilivideo.cn,extended-matching
+DOMAIN,data.bilibili.com,extended-matching
+DOMAIN,cm.bilibili.com,extended-matching
+DOMAIN,userlocations.googleapis.com,extended-matching
+DOMAIN-SUFFIX,designscapeuk.com,extended-matching
+DOMAIN-SUFFIX,yirujs.com,extended-matching
+DOMAIN,px.wpk.quark.cn,extended-matching
+DOMAIN,track.lc.quark.cn,extended-matching
+DOMAIN,7wkklb.tdum.alibaba.com,extended-matching
+IP-CIDR,95.161.76.100/31,no-resolve

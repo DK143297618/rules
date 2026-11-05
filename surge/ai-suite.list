@@ -1,0 +1,6 @@
+# Gemini/AI（原 rules.dconf 134-137）
+
+DOMAIN-SUFFIX,gemini.google.com,extended-matching
+DOMAIN-SUFFIX,aistudio.google.com,extended-matching
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,extended-matching
+DOMAIN-SUFFIX,deepmind.google,extended-matching

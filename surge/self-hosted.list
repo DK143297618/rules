@@ -1,0 +1,8 @@
+# 自建/自有域名直连（原 rules.dconf 头部 6 条）
+
+DOMAIN-SUFFIX,cjjd19.com,extended-matching
+IP-CIDR,162.14.132.212/32,no-resolve
+DOMAIN,dstatus.mmzs.space,extended-matching
+DOMAIN,nft.mmzs.de,extended-matching
+DOMAIN,mmzs.space,extended-matching
+DOMAIN-SUFFIX,asklink.com,extended-matching
