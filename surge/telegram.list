@@ -1,0 +1,31 @@
+# Telegram 三区（亚洲/美国/欧洲 DC）合并；统一走 TG亚洲 组
+# 原：TG亚洲 12 + TG美国 4 + TG欧洲 12（其中 PROTOCOL,MTProto 留 rules.dconf）
+# 注：2001:b28:f23d::/48 原属 TG美国，被 2001:b28:f23c::/46 覆盖，合并后同组无影响
+
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,telegram.me
+IP-CIDR,91.108.56.0/22,no-resolve
+IP-CIDR,91.108.16.0/21,no-resolve
+IP-CIDR,149.154.168.0/22,no-resolve
+IP-CIDR,91.108.12.0/22,no-resolve
+IP-CIDR,149.154.172.0/22,no-resolve
+IP-CIDR6,2001:b28:f23d::/48,no-resolve
+IP-CIDR,5.28.192.0/18,no-resolve
+IP-CIDR,91.105.192.0/23,no-resolve
+IP-CIDR,91.108.4.0/22,no-resolve
+IP-CIDR,91.108.8.0/22,no-resolve
+IP-CIDR,95.161.64.0/20,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
+IP-CIDR,149.154.160.0/21,no-resolve
+IP-CIDR,185.76.151.0/24,no-resolve
+IP-CIDR6,2001:67c:4e8::/48,no-resolve
+IP-CIDR6,2a0a:f280::/32,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,62041,no-resolve
+IP-ASN,211157,no-resolve
+IP-CIDR6,2001:b28:f23c::/46,no-resolve
+RULE-SET,https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Telegram.list,no-resolve
