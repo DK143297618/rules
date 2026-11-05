@@ -1,3 +1,0 @@
-# apple 集（只需保住 metrics.icloud.com：它在 direct.list 的 icloud.com 直连之前）
-
-DOMAIN-SUFFIX,metrics.icloud.com,extended-matching

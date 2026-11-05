@@ -1,8 +1,0 @@
-# YouTube 集
-
-DOMAIN-SUFFIX,youtube.com,extended-matching
-DOMAIN-SUFFIX,youtu.be,extended-matching
-DOMAIN-SUFFIX,googlevideo.com,extended-matching
-DOMAIN-SUFFIX,ytimg.com,extended-matching
-DOMAIN-SUFFIX,youtubei.googleapis.com,extended-matching
-DOMAIN-SUFFIX,ggpht.com,extended-matching

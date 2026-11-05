@@ -1,4 +1,0 @@
-# DIRECT 例外集（必须先于广告拦截：dler AdBlock 误杀 youdao 自家域）
-
-DOMAIN-SUFFIX,shared.youdao.com
-DOMAIN-SUFFIX,c.youdao.com
