@@ -1,62 +1,18 @@
 # 红果/字节 广告下发接口 REJECT（原 rules.dconf 18-38 区段 16 条）
-# 2026-11-08 补齐：对照 qq2519157/adblock-modules v1.4（红果 Android 7.4.2.32 反编译实证）
-# 引用方 rules.dconf:14 已加 extended-matching，裸 IP(SNI)/HTTP Host 场景同样命中。
 
-# ── 穿山甲 / Pangle SDK（-b 镜像域与 snssdk 通配为 2026-11-08 补）────────────────
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
-DOMAIN-SUFFIX,pglstatp-toutiao-b.com
-DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
-DOMAIN-WILDCARD,pangolin*.snssdk.com
 DOMAIN-SUFFIX,ad.pangle.cn
 DOMAIN-SUFFIX,ad.pangolin.cn
-DOMAIN-SUFFIX,pangle.io
-
-# ── 广告位下发（wildcard 收窄，替原 ads3/ads5/minigame3/minigame5 四条关键字）──
-# 原关键字只覆盖 3/5 两个机房，ads1/2/4/6 全漏；wildcard 覆盖任意机房前缀与后缀
-DOMAIN-WILDCARD,ads*-normal.zijieapi.com
-DOMAIN-WILDCARD,ads*-normal-*.zijieapi.com
-DOMAIN-WILDCARD,minigame*-normal.zijieapi.com
-DOMAIN-WILDCARD,minigame*-normal-*.zijieapi.com
-# snssdk.com 侧同名变体（该域在 hongguo-direct.list 里整域 DIRECT，需在此先拦）
-DOMAIN-WILDCARD,ads*-normal*.snssdk.com
-DOMAIN-WILDCARD,minigame*-normal*.snssdk.com
-
-# ── TNC 广告/运营配置下发（dns105 内置表 send_tnc_host_arrays 实证）────────────
-# 红果正常域走 hongguo-direct.list 的 zijieapi.com 整域 DIRECT 兜底，
-# 不在此处先拦，广告配置就能照常下发（素材位拿到配置才会拉素材）
-DOMAIN,tnc3-alisc1.snssdk.com
-DOMAIN,tnc3-aliec2.snssdk.com
-DOMAIN,tnc0-alisc1.snssdk.com
-DOMAIN,tnc0-aliec2.snssdk.com
-DOMAIN,tnc3-alisc1.zijieapi.com
-DOMAIN,tnc3-aliec2.zijieapi.com
-DOMAIN,tnc0-alisc1.zijieapi.com
-DOMAIN,tnc0-aliec2.zijieapi.com
-DOMAIN-WILDCARD,tnc*-bjlgy*.zijieapi.com
-DOMAIN-WILDCARD,tnc*-bjlgy*.bytedance.com
-
-# ── 广告素材签名 / 落地页 / 弹窗 ────────────────────────────────────────────────
 DOMAIN-KEYWORD,ad-union-sdk
 DOMAIN-KEYWORD,hongguo.ad
 DOMAIN-KEYWORD,reading-ad
 DOMAIN-KEYWORD,ad-sign
-DOMAIN,p3-mgsdk-sign.byteimg.com
-DOMAIN,p9-mgsdk-sign.byteimg.com
-DOMAIN,zlink.ugsdk.cn
-DOMAIN-SUFFIX,praisewindow.ugsdk.cn
-DOMAIN-SUFFIX,chengzijianzhan.com
-DOMAIN,activity-ag.awemeughun.com
-
-# ── 遗留条目（百度网盘本地探测 / 拼多多广告）────────────────────────────────────
 DOMAIN,adim.pinduoduo.com
 DOMAIN,localhost.pan.baidu.com
-
-# ── 伪装广告 CDN（安卓实抓确认；误伤任何正常功能则整段注释掉即可）──────────────
-DOMAIN-SUFFIX,comfylink.com
-DOMAIN-SUFFIX,ndcpp.com
-DOMAIN-SUFFIX,qrstuvwxyzab.com
-DOMAIN-SUFFIX,jomoxc.com
-DOMAIN-SUFFIX,wmzfylgdsz.com
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
+DOMAIN-SUFFIX,pangle.io
+DOMAIN-KEYWORD,ads3-normal
+DOMAIN-KEYWORD,ads5-normal
+DOMAIN-KEYWORD,minigame3-normal
+DOMAIN-KEYWORD,minigame5-normal

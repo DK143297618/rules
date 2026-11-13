@@ -1,11 +1,12 @@
 # pre-matching REJECT（全局最高优先级，位置无关；原 10 条合并）
+# 2026-11-13 移除 yirujs.com：B站媒体 CDN 现在在 hw 节点直接 302 到 zzNN.yirujs.com(PCDN)，
+# 拦掉后分片请求全被拒、播放彻底不出画面（收不到数据面，无 baseUrl 可回落）。已改到 rule-direct.list。
 
 DOMAIN-SUFFIX,mcdn.bilivideo.cn,extended-matching
 DOMAIN,data.bilibili.com,extended-matching
 DOMAIN,cm.bilibili.com,extended-matching
 DOMAIN,userlocations.googleapis.com,extended-matching
 DOMAIN-SUFFIX,designscapeuk.com,extended-matching
-DOMAIN-SUFFIX,yirujs.com,extended-matching
 DOMAIN,px.wpk.quark.cn,extended-matching
 DOMAIN,track.lc.quark.cn,extended-matching
 DOMAIN,7wkklb.tdum.alibaba.com,extended-matching

@@ -102,6 +102,8 @@ DOMAIN-SUFFIX,djlive.ndcimgs.com
 DOMAIN-SUFFIX,gepush.com
 DOMAIN-SUFFIX,qrstuvwxyzab.com
 DOMAIN-SUFFIX,tlivemcdn.com
+# B站 PCDN 供应商：hw 系媒体 CDN 直接 302 到这里，必须直连（拦了就没有数据面）
+DOMAIN-SUFFIX,yirujs.com
 DOMAIN-SUFFIX,wmzfylgdsz.com
 DOMAIN-SUFFIX,xxpkg.com
 DOMAIN-SUFFIX,ydycdn.com
